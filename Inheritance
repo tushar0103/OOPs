@@ -1,0 +1,31 @@
+package tushar;
+
+class calculation{
+	int z;
+	public void addition(int x, int y) {
+		z=x+y;
+		System.out.println("The sum of two number is ="+z);
+		
+	}
+	public void substraction(int x, int y) {
+		z= x-y;
+		System.out.println("the substrationof two number is"+z);
+	}
+}
+
+public class My_calculator extends calculation{
+	
+	public void  multiplication(int x,int y){
+		z=x*y;
+	}
+
+	public static void main(String[] args) {
+	int a=10, b=20;
+	My_calculator demo = new My_calculator();
+	demo.addition(a, b);
+	demo.substraction(a, b);
+	demo.multiplication(a,b);
+	
+	}
+
+}
