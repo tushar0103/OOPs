@@ -1,0 +1,22 @@
+package tushar;
+
+class Superclass{
+	int age;
+	Superclass(int age){
+		this.age = age;
+	}
+	public void getAge() {
+		System.out.println("the value of age in super clas is "+age);
+	}
+}
+public class Subclass extends Superclass {
+	 Subclass(int age){
+		 super(age);
+     }
+	public static void main(String[] args) {
+		Subclass S= new Subclass(24);
+		S.getAge();
+
+	}
+
+}
